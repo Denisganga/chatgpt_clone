@@ -3,23 +3,25 @@ from django.http import JsonResponse
 import openai
 
 
-openai_api_key='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'
+openai_api_key=''
 openai.api_key =openai_api_key
 
 
 def ask_openai(message):
-    response =openai.Completion.create(
-        model = "text-davinci-003",
-        prompt =message,
-        max_tokens=150,
-        n=1,
-        stop=None,
-        temperature=0.7
+    response =openai.ChatCompletion.create(
+        model = "gpt-3.5-turbo",
+        messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": message},
+    
+  ]
 
     )
 
     print(response)
-    #answer =response.choice[0].text.strip()
+
+    
+    #answer =response.choices[0].text.strip()
     #return answer
 # Create your views here.
 def chatbot(request):
