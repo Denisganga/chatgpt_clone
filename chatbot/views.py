@@ -3,7 +3,7 @@ from django.http import JsonResponse
 import openai
 
 
-openai_api_key=''
+openai_api_key='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'
 openai.api_key =openai_api_key
 
 
@@ -18,11 +18,10 @@ def ask_openai(message):
 
     )
 
-    print(response)
 
     
-    #answer =response.choices[0].text.strip()
-    #return answer
+    answer =response.choices[0].message.content.strip()
+    return answer
 # Create your views here.
 def chatbot(request):
     if request.method=='POST':
