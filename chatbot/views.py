@@ -6,7 +6,7 @@ from django.contrib import auth
 from django.contrib.auth.models import User
 
 
-openai_api_key='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'
+openai_api_key=''
 openai.api_key =openai_api_key
 
 
