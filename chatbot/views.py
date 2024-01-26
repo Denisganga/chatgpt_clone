@@ -6,7 +6,7 @@ from django.contrib import auth
 from django.contrib.auth.models import User
 
 
-openai_api_key=''
+openai_api_key='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'
 openai.api_key =openai_api_key
 
 
@@ -35,7 +35,19 @@ def chatbot(request):
 
 
 def login(request):
-    return render(request,'login.html')
+    if request.METHOD=='POST':
+        username=request.POST['username']
+        password=request.POST['password']
+        user=auth.authenticate(request,username=username,password=password)
+        if user is not None:
+            auth.login(request,user)
+            return redirect('chatbot')
+        else:
+            error_message='Invalid username or password'
+            return render(request,login.html,{'error_message':error_message})
+        
+    else:
+        return render(request,'login.html')
 
 def register(request):
     if request.method=='POST':
