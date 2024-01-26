@@ -70,6 +70,7 @@
     <div class="card-header bg-primary text-white">Educational helper</div>
 
     {% if user.is_authenticated%}
+    <div class="card-header bg-primary text-white"> <b>Welcome {{user.username}}</b><a style="color:yellow" href ="logout">logout</a></div>
     {% else %}
     <div class="card-header bg-primary text-white"><a style="color:yellow"href="login">Login</a>  <a style="color:yellow" href ="register">register</a></div>
     {% endif %}
