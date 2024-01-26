@@ -67,7 +67,12 @@
 {% block content %}
 <div class="chat-container">
   <div class="card flex-grow-1">
-    <div class="card-header bg-primary text-white">Chat</div>
+    <div class="card-header bg-primary text-white">Educational helper</div>
+
+    {% if user.is_authenticated%}
+    {% else %}
+    <div class="card-header bg-primary text-white"><a style="color:yellow"href="login">Login</a>  <a style="color:yellow" href ="register">register</a></div>
+    {% endif %}
     <div class="card-body messages-box">
       
       <ul class="list-unstyled messages-list">

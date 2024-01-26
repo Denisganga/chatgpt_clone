@@ -35,7 +35,7 @@ def chatbot(request):
 
 
 def login(request):
-    if request.METHOD=='POST':
+    if request.method=='POST':
         username=request.POST['username']
         password=request.POST['password']
         user=auth.authenticate(request,username=username,password=password)
