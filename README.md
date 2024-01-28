@@ -55,14 +55,14 @@ python3 manage.py runserver
 2) Register Page
 3) Conversational chatbot powered by OpenAI API.
 
-###8. Usage
+### 8. Usage
 Type on the message box and the chatbot will respond to you
 
-###9. Contribution
+### 9. Contribution
 Contribution is welcomed, We Welcome Your Pull Requests: Contribute to the Chatbot
 
 ###10. License
 This project is licensed under the [MIT_license](MIT_license).
 
-###11. Acknowledgements
+### 11. Acknowledgements
 OpenAI for providing the powerful natural language processing capabilities.
