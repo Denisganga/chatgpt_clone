@@ -61,7 +61,7 @@ Type on the message box and the chatbot will respond to you
 ### 9. Contribution
 Contribution is welcomed, We Welcome Your Pull Requests: Contribute to the Chatbot
 
-###10. License
+### 10. License
 This project is licensed under the [MIT_license](MIT_license).
 
 ### 11. Acknowledgements
