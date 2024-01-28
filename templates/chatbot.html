@@ -6,6 +6,7 @@
       height: 100%;
     }
 
+
     .messages-box {
       flex: 1;
       overflow-y: auto;
@@ -67,12 +68,13 @@
 {% block content %}
 <div class="chat-container">
   <div class="card flex-grow-1">
-    <div class="card-header bg-primary text-white">Educational helper</div>
+    
+    <div class="card-header bg-primary text-white text-center">Educational helper</div>
 
     {% if user.is_authenticated%}
-    <div class="card-header bg-primary text-white"> <b>Welcome  back {{user.username}} to your educational helper</b><a style="color:yellow" href ="logout">   logout </a></div>
+    <div class="card-header bg-primary text-white text-center"> <b>Welcome  back {{user.username}} to your educational helper</b><a style="color:yellow" href ="logout">   logout </a></div>
     {% else %}
-    <div class="card-header bg-primary text-white"><a style="color:yellow"href="login">Login</a>  <a style="color:yellow" href ="register">register</a></div>
+    <div class="card-header bg-primary text-white text-right"><a style="color:yellow"href="login">Login</a>  <a style="color:yellow" href ="register">register</a></div>
     {% endif %}
     <div class="card-body messages-box">
       
