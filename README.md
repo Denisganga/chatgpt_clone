@@ -42,8 +42,8 @@ From the OpenAi website get your API key and add it in your views.py file
 ### 5. Apply Migration
 
 ```bash
-python manage.py makemigrations
-python manage.py migrate
+python3 manage.py makemigrations
+python3 manage.py migrate
 ```
 ### 6. Run the development server
 
@@ -59,7 +59,7 @@ python3 manage.py runserver
 Type on the message box and the chatbot will respond to you
 
 ### 9. Contribution
-Contribution is welcomed, We Welcome Your Pull Requests: Contribute to the Chatbot
+Contribution is welcomed, I Welcome Your Pull Requests: Contribute to the Chatbot
 
 ### 10. License
 This project is licensed under the [MIT_license](MIT_license).
