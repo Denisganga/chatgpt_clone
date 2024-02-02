@@ -2,10 +2,8 @@
 
 This is a Django-based chatbot application that leverages the OpenAI API for natural language processing and conversation generation.
 
-![Example Image](confirmation.png)
+![Example Image](nn.png)
 
-
-![Example Image](input.png)
 
 ## Prerequisites
 
